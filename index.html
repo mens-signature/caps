@@ -1,0 +1,1681 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEN'S SIGNATURE | Premium Caps</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome 6 Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="icon" type="image/x-icon" href="mens-signature-logo.png" />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Montserrat", sans-serif;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      body {
+        background-color: #fcfbf9;
+        color: #111111;
+        padding-bottom: 70px;
+        letter-spacing: 0.3px;
+      }
+
+      /* Top Announcement Bar */
+      .top-bar {
+        background-color: #111111;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px 16px;
+        font-size: 11px;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      /* Header Navigation */
+      .header-nav {
+        padding: 18px 20px;
+        text-align: center;
+        border-bottom: 1px solid #eaeaea;
+        background: #fcfbf9;
+      }
+      .brand-logo {
+        font-family: "Cinzel", serif;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: #111111;
+      }
+      .brand-sub {
+        font-size: 9px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #777777;
+        margin-top: 3px;
+      }
+
+      /* Hero Section */
+      .hero {
+        position: relative;
+        background:
+          linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.35) 0%,
+            rgba(0, 0, 0, 0.65) 100%
+          ),
+          url("hero.jpg") center/cover no-repeat;
+        height: 55vh;
+        min-height: 360px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 30px 20px;
+        color: #ffffff;
+      }
+      .hero-subtitle {
+        font-size: 9px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        opacity: 0.9;
+        margin-bottom: 6px;
+      }
+      .hero-title {
+        font-family: "Cinzel", serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.25;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+      }
+      .hero-desc {
+        font-size: 11px;
+        font-weight: 300;
+        line-height: 1.5;
+        max-width: 420px;
+        opacity: 0.85;
+        margin-bottom: 18px;
+      }
+      .hero-btn {
+        display: inline-block;
+        background-color: #ffffff;
+        color: #111111;
+        padding: 12px 24px;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-decoration: none;
+        width: fit-content;
+        transition: all 0.3s ease;
+      }
+      .hero-btn:hover {
+        background-color: #111111;
+        color: #ffffff;
+      }
+
+      /* Why Choose Us */
+      .features-section {
+        padding: 48px 20px;
+        border-bottom: 1px solid #eaeaea;
+        background: #ffffff;
+      }
+      .features-header {
+        text-align: center;
+        margin-bottom: 36px;
+      }
+      .features-subhead {
+        font-size: 9px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #888888;
+        margin-bottom: 6px;
+      }
+      .features-title {
+        font-family: "Cinzel", serif;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #111111;
+      }
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px 16px;
+        max-width: 850px;
+        margin: 0 auto;
+      }
+      @media (min-width: 640px) {
+        .features-grid {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+      .feature-card {
+        text-align: center;
+        padding: 20px 12px;
+        border: 1px solid #f2f0eb;
+        background: #fcfbf9;
+        transition:
+          transform 0.3s ease,
+          border-color 0.3s ease;
+      }
+      .feature-card:hover {
+        border-color: #111111;
+        transform: translateY(-2px);
+      }
+      .feature-icon-box {
+        width: 44px;
+        height: 44px;
+        margin: 0 auto 14px auto;
+        border-radius: 50%;
+        background: #ffffff;
+        border: 1px solid #e5e3de;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #111111;
+        font-size: 16px;
+      }
+      .feature-title {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+        color: #111111;
+      }
+      .feature-desc {
+        font-size: 10px;
+        color: #666666;
+        line-height: 1.5;
+        font-weight: 300;
+      }
+
+      /* Exclusive Combo Offer Banner */
+      .combo-banner {
+        margin: 32px 20px;
+        background: linear-gradient(135deg, #111111 0%, #222222 100%);
+        color: #ffffff;
+        padding: 32px 20px;
+        text-align: center;
+        border: 1px solid #333333;
+        position: relative;
+        overflow: hidden;
+        max-width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .combo-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 10px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #d4af37;
+        margin-bottom: 10px;
+        font-weight: 600;
+      }
+      .combo-title {
+        font-family: "Cinzel", serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: #ffffff;
+        margin-bottom: 10px;
+        letter-spacing: 1.5px;
+      }
+      .combo-desc {
+        font-size: 11px;
+        color: #cccccc;
+        line-height: 1.6;
+        font-weight: 300;
+        max-width: 500px;
+        margin: 0 auto 16px auto;
+      }
+
+      /* Minimal Timer Styling */
+      .timer-wrapper {
+        margin-bottom: 18px;
+      }
+      .timer-title {
+        font-size: 8px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #a0a0a0;
+        margin-bottom: 8px;
+      }
+      .timer-box {
+        display: inline-flex;
+        gap: 12px;
+        justify-content: center;
+        align-items: center;
+      }
+      .timer-segment {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .timer-val {
+        font-family: "Cinzel", serif;
+        font-size: 18px;
+        font-weight: 600;
+        color: #ffffff;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        width: 42px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 1px;
+      }
+      .timer-lbl {
+        font-size: 7px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: #888888;
+        margin-top: 4px;
+      }
+      .timer-colon {
+        font-size: 14px;
+        color: #555555;
+        margin-top: -12px;
+      }
+
+      .combo-pills {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      .combo-pill-item {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 6px 14px;
+        font-size: 10px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border-radius: 20px;
+      }
+
+      /* Catalog Section */
+      .catalog-section {
+        padding: 40px 16px;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      .section-title {
+        font-family: "Cinzel", serif;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #111111;
+        margin-bottom: 32px;
+      }
+
+      /* Product Cards */
+      .product-card {
+        background: #ffffff;
+        border: 1px solid #eaeaea;
+        margin-bottom: 36px;
+      }
+      .product-img-wrapper {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        background: #f0f0f0;
+        overflow: hidden;
+      }
+      .product-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: grayscale(10%);
+        transition: transform 0.5s ease;
+      }
+      .product-card:hover .product-img {
+        transform: scale(1.03);
+      }
+      .product-tag {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        background: #111111;
+        color: #ffffff;
+        font-size: 9px;
+        font-weight: 600;
+        padding: 4px 10px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+      }
+
+      .product-info {
+        padding: 20px 16px;
+      }
+      .product-name {
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        color: #111111;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+      }
+      .price-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #f0f0f0;
+      }
+      .current-price {
+        font-size: 15px;
+        font-weight: 600;
+        color: #111111;
+      }
+      .old-price {
+        font-size: 12px;
+        color: #999999;
+        text-decoration: line-through;
+        margin-left: 8px;
+        font-weight: 300;
+      }
+
+      .stock-badge {
+        font-size: 10px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+      .in-stock {
+        color: #2e7d32;
+      }
+      .out-stock {
+        color: #c62828;
+      }
+
+      .action-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+      .btn {
+        padding: 12px;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        border: 1px solid #111111;
+        cursor: pointer;
+        text-align: center;
+        transition: all 0.25s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        text-decoration: none;
+      }
+      .btn-cart {
+        background: #ffffff;
+        color: #111111;
+      }
+      .btn-cart:hover {
+        background: #f4f4f4;
+      }
+      .btn-buy {
+        background: #111111;
+        color: #ffffff;
+      }
+      .btn-buy:hover {
+        background: #333333;
+      }
+      .btn:disabled {
+        border-color: #cccccc !important;
+        background: #f5f5f5 !important;
+        color: #aaaaaa !important;
+        cursor: not-allowed;
+      }
+
+      /* Minimal & Premium Messenger & WhatsApp Buttons */
+      .social-buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        margin-top: 8px;
+      }
+      .btn-social-minimal {
+        background-color: #ffffff;
+        color: #111111;
+        border: 1px solid #e0e0e0;
+        padding: 7px 10px;
+        font-size: 8px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border-radius: 0;
+        transition: all 0.3s ease;
+      }
+      .btn-whatsapp-minimal:hover {
+        border-color: #25d366;
+        color: #25d366;
+        background-color: #f7fdf9;
+      }
+      .btn-messenger-minimal:hover {
+        border-color: #0084ff;
+        color: #0084ff;
+        background-color: #f5f9ff;
+      }
+
+      /* Bottom Footer Checkout Section */
+      .footer-checkout-section {
+        background: #ffffff;
+        border-top: 1px solid #eaeaea;
+        padding: 40px 20px;
+        text-align: center;
+        margin-top: 40px;
+      }
+      .footer-checkout-container {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      .footer-title {
+        font-family: "Cinzel", serif;
+        font-size: 18px;
+        letter-spacing: 2px;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+      }
+      .footer-desc {
+        font-size: 11px;
+        color: #666666;
+        margin-bottom: 20px;
+        font-weight: 300;
+      }
+
+      /* Floating Bottom Cart Bar */
+      .cart-bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #ffffff;
+        border-top: 1px solid #111111;
+        padding: 12px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 90;
+      }
+      .cart-info {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        cursor: pointer;
+      }
+      .cart-count-badge {
+        background: #111111;
+        color: #ffffff;
+        font-size: 10px;
+        font-weight: 600;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Modal Overlay & Card (Optimized to Fit Screen Without Scrolling) */
+      .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(3px);
+        z-index: 200;
+        display: none;
+        justify-content: center;
+        align-items: flex-end;
+      }
+      .modal-overlay.active {
+        display: flex;
+      }
+
+      .modal-card {
+        background: #ffffff;
+        width: 100%;
+        max-width: 500px;
+        max-height: 85vh;
+        padding: 14px 16px;
+        overflow-y: auto;
+        border-top: 2px solid #111111;
+        animation: slideUp 0.3s ease-out;
+        box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.15);
+      }
+      @keyframes slideUp {
+        from {
+          transform: translateY(100%);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+
+      .modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid #eaeaea;
+      }
+      .modal-title {
+        font-family: "Cinzel", serif;
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: #111111;
+      }
+      .close-btn {
+        background: none;
+        color: #111111;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      /* Cart Items List */
+      .cart-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 4px 0;
+        border-bottom: 1px solid #f0f0f0;
+      }
+      .cart-item-img {
+        width: 32px;
+        height: 38px;
+        object-fit: cover;
+        background: #f5f5f5;
+      }
+      .cart-item-details {
+        flex: 1;
+      }
+      .cart-item-title {
+        font-size: 9px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #111111;
+        margin-bottom: 2px;
+      }
+      .cart-item-price {
+        font-size: 9px;
+        color: #666666;
+      }
+      .qty-controls {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        border: 1px solid #dddddd;
+        padding: 1px;
+      }
+      .qty-btn {
+        background: none;
+        color: #111111;
+        border: none;
+        width: 18px;
+        height: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 11px;
+      }
+
+      /* Compact Form Fields (No Scroll Fit) */
+      .form-group {
+        margin-bottom: 6px;
+      }
+      .form-label {
+        display: block;
+        font-size: 8px;
+        font-weight: 600;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        color: #444444;
+        margin-bottom: 2px;
+      }
+      .form-input {
+        width: 100%;
+        padding: 7px 9px;
+        background: #fbfbfb;
+        border: 1px solid #dddddd;
+        color: #111111;
+        font-size: 10px;
+        outline: none;
+        border-radius: 0;
+        transition: border-color 0.2s;
+      }
+      .form-input:focus {
+        border-color: #111111;
+        background: #ffffff;
+      }
+
+      /* Compact Summary Box */
+      .summary-box {
+        background: #fbfbfb;
+        padding: 8px 10px;
+        margin: 8px 0;
+        border: 1px solid #eaeaea;
+      }
+      .summary-row {
+        display: flex;
+        justify-content: space-between;
+        font-size: 9px;
+        color: #666666;
+        margin-bottom: 3px;
+      }
+      .summary-row.total {
+        border-top: 1px solid #dddddd;
+        padding-top: 4px;
+        margin-top: 4px;
+        color: #111111;
+        font-weight: 700;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      /* Status Feedback Modal (Success/Failed Popup) */
+      .status-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(4px);
+        z-index: 300;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+      .status-modal.active {
+        display: flex;
+      }
+      .status-card {
+        background: #ffffff;
+        width: 100%;
+        max-width: 380px;
+        padding: 24px 20px;
+        text-align: center;
+        border-top: 4px solid #111111;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        animation: zoomIn 0.25s ease-out;
+      }
+      @keyframes zoomIn {
+        from {
+          transform: scale(0.9);
+          opacity: 0;
+        }
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      .status-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        margin: 0 auto 14px auto;
+      }
+      .status-icon.success {
+        background: #e8f5e9;
+        color: #2e7d32;
+      }
+      .status-icon.failed {
+        background: #ffebee;
+        color: #c62828;
+      }
+      .status-title {
+        font-family: "Cinzel", serif;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        color: #111111;
+        text-transform: uppercase;
+      }
+      .status-desc {
+        font-size: 11px;
+        color: #666666;
+        line-height: 1.5;
+        margin-bottom: 18px;
+      }
+      /* মোবাইল স্ক্রিনের জন্য বিশেষ অপ্টিমাইজেশন */
+      @media (max-width: 640px) {
+        /* চেকআউট মডাল সম্পূর্ণ স্ক্রিন জুড়ে থাকবে */
+        #checkoutModal .modal-content {
+          width: 100vw !important;
+          height: 100vh !important;
+          max-height: 100vh !important;
+          border-radius: 0 !important;
+          padding: 16px !important;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          box-sizing: border-box;
+        }
+
+        /* শিরোনাম ও ফন্ট সাইজ বড় করা */
+        #checkoutModal h2,
+        #checkoutModal .modal-header {
+          font-size: 20px !important;
+          font-weight: 700;
+          margin-bottom: 10px !important;
+        }
+
+        /* ইনপুট ফিল্ড ও লেবেল স্পষ্ট করা */
+        #checkoutModal label {
+          font-size: 14px !important;
+          font-weight: 600 !important;
+          margin-bottom: 4px !important;
+          display: block;
+        }
+
+        #checkoutModal input,
+        #checkoutModal select,
+        #checkoutModal textarea {
+          font-size: 15px !important;
+          padding: 10px 12px !important;
+          height: 44px !important; /* আঙুলে সহজে ট্যাপ করার জন্য উপযুক্ত সাইজ */
+          border-radius: 8px !important;
+          margin-bottom: 8px !important;
+        }
+
+        /* কার্ট আইটেমের লিস্ট বড় করা */
+        .cart-item {
+          padding: 8px 0 !important;
+        }
+        .cart-item-title {
+          font-size: 14px !important;
+        }
+        .cart-item-price {
+          font-size: 14px !important;
+          font-weight: bold;
+        }
+
+        /* বেশি প্রোডাক্ট হলে শুধুমাত্র কার্ট লিস্ট স্ক্রল হবে, পুরো ফর্ম নয় */
+        #cartItemsList {
+          max-height: 140px;
+          overflow-y: auto;
+          margin-bottom: 10px;
+        }
+
+        /* টোটাল সামারি ও সাবমিট বাটন স্ক্রিনের নিচে ফিক্সড থাকবে */
+        .checkout-summary {
+          background: #f8f9fa;
+          padding: 10px 12px;
+          border-radius: 8px;
+          font-size: 14px !important;
+          margin-top: auto;
+        }
+
+        #submitBtn {
+          font-size: 16px !important;
+          padding: 14px !important;
+          height: 50px !important;
+          font-weight: bold;
+          border-radius: 8px !important;
+          margin-top: 10px !important;
+        }
+      }
+    </style>
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+      fbq("init", "1472943064655413");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1472943064655413&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+  </head>
+  <body>
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+      SPECIAL OFFER — ৩ টি ক্যাপ মাত্র ১৩৫০ টাকা + ফ্রি ডেলিভারি
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="header-nav">
+      <div class="brand-logo">MEN'S SIGNATURE</div>
+      <div class="brand-sub">Premium Cap Collection 2026</div>
+    </header>
+
+    <!-- 1. HERO SECTION -->
+    <section class="hero">
+      <div class="hero-subtitle">NEW ARRIVALS</div>
+      <h1 class="hero-title">ESSENTIAL CAP COLLECTION</h1>
+      <p class="hero-desc">
+        প্রিমিয়াম ফেব্রিক, প্রিমিয়াম মেটাল এডজাস্টার বাকিল ও মিনিমাল ডিজাইন।
+        আপনার ক্যাজুয়াল লুকে যোগ করুন এলিগ্যান্ট টাচ।
+      </p>
+      <a href="#catalog" class="hero-btn">কালেকশন এক্সপ্লোর করুন</a>
+    </section>
+
+    <!-- 2. WHY CHOOSE US -->
+    <section class="features-section">
+      <div class="features-header">
+        <div class="features-subhead">WHY CHOOSE US</div>
+        <h2 class="features-title">আমাদের বিশেষত্ব</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <i class="fa-solid fa-gem"></i>
+          </div>
+          <div class="feature-title">PREMIUM FABRIC</div>
+          <div class="feature-desc">
+            প্রিমিয়াম ফেব্রিক এবং মাথার সাইজ অনুযায়ী সহজে অ্যাডজাস্ট করার
+            প্রিমিয়াম মেটাল বাকল
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <div class="feature-title">EXPRESS DELIVERY</div>
+          <div class="feature-desc">
+            সারাদেশে ২-৩ দিনে হোম ডেলিভারি সুব্যবস্থা
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <i class="fa-solid fa-box-open"></i>
+          </div>
+          <div class="feature-title">OPEN BOX CHECK</div>
+          <div class="feature-desc">
+            ডেলিভারির সময় প্রোডাক্ট ট্রায়াল দিয়ে নেওয়ার সুযোগ
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <i class="fa-solid fa-tags"></i>
+          </div>
+          <div class="feature-title">BUNDLE OFFER</div>
+          <div class="feature-desc">
+            ৩টি ক্যাপ নিলে ১৩৫০ টাকা ও ফ্রি ডেলিভারি চার্জ
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Exclusive Combo Offer Banner with Minimal Timer -->
+    <div class="combo-banner">
+      <div class="combo-badge">
+        <i class="fa-solid fa-crown"></i> EXCLUSIVE OFFER
+      </div>
+      <div class="combo-title">3-PIECE BUNDLE SAVINGS</div>
+      <div class="combo-desc">
+        আপনার পছন্দের যেকোনো ৩টি ক্যাপ নির্বাচন করুন মাত্র ১৩৫০ টাকায় এবং উপভোগ
+        করুন ফাস্ট ফ্রি ডেলিভারি সার্ভিস!
+      </div>
+
+      <!-- Minimal Countdown Timer Section -->
+      <div class="timer-wrapper">
+        <div class="timer-title">অফারের সময় বাকি:</div>
+        <div class="timer-box">
+          <div class="timer-segment">
+            <div class="timer-val" id="timerHours">12</div>
+            <div class="timer-lbl">Hours</div>
+          </div>
+          <div class="timer-colon">:</div>
+          <div class="timer-segment">
+            <div class="timer-val" id="timerMinutes">45</div>
+            <div class="timer-lbl">Mins</div>
+          </div>
+          <div class="timer-colon">:</div>
+          <div class="timer-segment">
+            <div class="timer-val" id="timerSeconds">30</div>
+            <div class="timer-lbl">Secs</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="combo-pills">
+        <span class="combo-pill-item"
+          ><i class="fa-solid fa-check"></i> ৩টি ক্যাপ ৳১৩৫০</span
+        >
+        <span class="combo-pill-item"
+          ><i class="fa-solid fa-truck-ramp-box"></i> ফ্রি ডেলিভারি</span
+        >
+        <span class="combo-pill-item"
+          ><i class="fa-solid fa-shield-halved"></i> ক্যাশ অন ডেলিভারি</span
+        >
+      </div>
+    </div>
+
+    <!-- 3. PRODUCT CATALOG -->
+    <section class="catalog-section" id="catalog">
+      <h2 class="section-title">OUR COLLECTIONs</h2>
+      <div id="productGrid">
+        <!-- Product Cards Rendered Dynamically -->
+      </div>
+    </section>
+
+    <!-- FOOTER CHECKOUT & DIRECT CONTACT SECTION -->
+    <footer class="footer-checkout-section">
+      <div class="footer-checkout-container">
+        <h3 class="footer-title">সহজে অর্ডার কনফার্ম করুন</h3>
+        <p class="footer-desc">
+          কনফার্ম করতে সরাসরি চেকআউট ফর্ম পূরণ করুন অথবা যেকোনো তথ্যের জন্য
+          আমাদের সাথে যোগাযোগ করুন।
+        </p>
+
+        <button
+          class="btn btn-buy"
+          style="width: 100%; padding: 13px; font-size: 10px"
+          onclick="openCheckoutModal()"
+        >
+          <i class="fa-solid fa-bag-shopping"></i> সরাসরি চেকআউট করুন
+        </button>
+
+        <div class="social-buttons">
+          <a
+            href="https://wa.me/8801639633847"
+            target="_blank"
+            class="btn btn-social-minimal btn-whatsapp-minimal"
+          >
+            <i class="fa-brands fa-whatsapp" style="font-size: 13px"></i>
+            WHATSAPP
+          </a>
+          <a
+            href="https://m.me/menssignaturee"
+            target="_blank"
+            class="btn btn-social-minimal btn-messenger-minimal"
+          >
+            <i
+              class="fa-brands fa-facebook-messenger"
+              style="font-size: 13px"
+            ></i>
+            MESSENGER
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Bottom Cart Bar -->
+    <div class="cart-bar">
+      <div class="cart-info" onclick="openCartModal()">
+        <div class="cart-count-badge" id="cartCount">0</div>
+        <div>
+          <div
+            style="
+              font-size: 9px;
+              letter-spacing: 1px;
+              color: #777;
+              text-transform: uppercase;
+            "
+          >
+            সাবটোটাল
+          </div>
+          <div
+            style="font-size: 14px; font-weight: 700; color: #111"
+            id="cartTotal"
+          >
+            ৳ 0
+          </div>
+        </div>
+      </div>
+      <button
+        class="btn btn-buy"
+        style="padding: 10px 20px; width: auto"
+        onclick="openCheckoutModal()"
+      >
+        চেকআউট <i class="fa-solid fa-arrow-right-long"></i>
+      </button>
+    </div>
+
+    <!-- Compact Checkout Modal (No-Scroll Mobile Screen) -->
+    <div class="modal-overlay" id="checkoutModal">
+      <div class="modal-card">
+        <div class="modal-header">
+          <div class="modal-title">অর্ডার কনফার্মেশন</div>
+          <button class="close-btn" onclick="closeModal()">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <!-- Cart Items Section -->
+        <div id="cartItemsList"></div>
+
+        <!-- Compact Order Form -->
+        <form id="orderForm" style="margin-top: 8px">
+          <div class="form-group">
+            <label class="form-label">আপনার নাম *</label>
+            <input
+              type="text"
+              id="custName"
+              class="form-input"
+              placeholder="সম্পূর্ণ নাম লিখুন"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">মোবাইল নম্বর *</label>
+            <input
+              type="tel"
+              id="custPhone"
+              class="form-input"
+              placeholder="১১ ডিজিটের মোবাইল নম্বর"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">সম্পূর্ণ ঠিকানা *</label>
+            <input
+              type="text"
+              id="custAddress"
+              class="form-input"
+              placeholder="বাসা/রোড নম্বর, এলাকা, থানা ও জেলা"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">ডেলিভারি এরিয়া *</label>
+            <select
+              id="deliveryArea"
+              class="form-input"
+              onchange="renderSummary()"
+            >
+              <option value="60">ঢাকার ভেতরে (৳ ৬০)</option>
+              <option value="120">ঢাকার বাইরে (৳ ১২০)</option>
+            </select>
+          </div>
+
+          <!-- Order Calculation Summary -->
+          <div class="summary-box">
+            <div class="summary-row">
+              <span>মোট ক্যাপ:</span>
+              <span id="summaryQty">0 টি</span>
+            </div>
+            <div class="summary-row">
+              <span>পণ্যের মূল্য:</span>
+              <span id="summarySubtotal">৳ 0</span>
+            </div>
+            <div class="summary-row">
+              <span>ডেলিভারি ফি:</span>
+              <span id="summaryDelivery">৳ ৬০</span>
+            </div>
+            <div class="summary-row total">
+              <span>সর্বমোট:</span>
+              <span id="summaryGrandTotal">৳ 0</span>
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-buy"
+            id="submitBtn"
+            style="width: 100%; padding: 10px; font-size: 10px"
+          >
+            অর্ডার কনফার্ম করুন (ক্যাশ অন ডেলিভারি)
+          </button>
+
+          <!-- Premium Minimal Social Buttons -->
+          <div class="social-buttons">
+            <a
+              href="https://wa.me/8801700000000"
+              target="_blank"
+              class="btn btn-social-minimal btn-whatsapp-minimal"
+            >
+              <i class="fa-brands fa-whatsapp"></i> WHATSAPP
+            </a>
+            <a
+              href="https://m.me/yourfacebookpage"
+              target="_blank"
+              class="btn btn-social-minimal btn-messenger-minimal"
+            >
+              <i class="fa-brands fa-facebook-messenger"></i> MESSENGER
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Order Status Popup (Success / Failed Modal) -->
+    <div class="status-modal" id="statusModal">
+      <div class="status-card">
+        <div class="status-icon" id="statusIcon"></div>
+        <h3 class="status-title" id="statusTitle"></h3>
+        <p class="status-desc" id="statusDesc"></p>
+        <button
+          class="btn btn-buy"
+          style="width: 100%; padding: 11px; font-size: 10px"
+          onclick="closeStatusModal()"
+        >
+          ঠিক আছে
+        </button>
+      </div>
+    </div>
+
+    <script>
+      // TOTAL 7 CAP PRODUCTS DATA WITH DEMO STOCKS & IMAGES
+      // ১. আপনার গুগল অ্যাপস স্ক্রিপ্ট লিঙ্ক (ডিপ্লয়মেন্ট ইউআরএল)
+      const GOOGLE_APP_SCRIPT_URL =
+        "https://script.google.com/macros/s/AKfycbzCo0i3xYgZnvBLzUvlAVuRmsfjO7ybMegBKhV_BrcEvdHL33IvERe31e9hS315R31E/exec";
+
+      // ২. প্রোডাক্ট ডাটা (ছবি ও নাম ঠিক রেখে)
+      let products = [
+        {
+          id: "CAP-01",
+          name: "Trust Your Soul Textured Twill",
+          price: 490,
+          oldPrice: 750,
+          stock: 4,
+          image: "one.jpg",
+        },
+        {
+          id: "CAP-02",
+          name: "Heavy Textured Twill Rubbered Black",
+          price: 490,
+          oldPrice: 750,
+          stock: 2,
+          image: "two.jpg",
+        },
+        {
+          id: "CAP-03",
+          name: "Saltire Premium Velvet",
+          price: 490,
+          oldPrice: 750,
+          stock: 4,
+          image: "three.jpg",
+        },
+        {
+          id: "CAP-04",
+          name: "99 Premium Heavy Corduroy",
+          price: 490,
+          oldPrice: 750,
+          stock: 2,
+          image: "four.jpg",
+        },
+        {
+          id: "CAP-05",
+          name: "Olive Premium Suede",
+          price: 490,
+          oldPrice: 750,
+          stock: 1,
+          image: "five.jpg",
+        },
+        {
+          id: "CAP-06",
+          name: "Heavy Textured Twill Rubbered Red",
+          price: 490,
+          oldPrice: 750,
+          stock: 1,
+          image: "six.jpg",
+        },
+        {
+          id: "CAP-07",
+          name: "Original Heavy Denim Cap",
+          price: 490,
+          oldPrice: 750,
+          stock: 1,
+          image: "seven.jpg",
+        },
+      ];
+
+      let cart = [];
+
+      // কাউন্টডাউন টাইমার
+      function startTimer(durationInSeconds) {
+        let timer = durationInSeconds;
+        setInterval(function () {
+          let hours = parseInt(timer / 3600, 10);
+          let minutes = parseInt((timer % 3600) / 60, 10);
+          let seconds = parseInt(timer % 60, 10);
+
+          hours = hours < 10 ? "0" + hours : hours;
+          minutes = minutes < 10 ? "0" + minutes : minutes;
+          seconds = seconds < 10 ? "0" + seconds : seconds;
+
+          document.getElementById("timerHours").innerText = hours;
+          document.getElementById("timerMinutes").innerText = minutes;
+          document.getElementById("timerSeconds").innerText = seconds;
+
+          if (--timer < 0) {
+            timer = 24 * 3600;
+          }
+        }, 1000);
+      }
+      startTimer(14 * 3600 + 32 * 60);
+
+      // গুগল শিট থেকে লাইভ স্টক ফেচ করা
+      function fetchLiveStock() {
+        if (
+          GOOGLE_APP_SCRIPT_URL &&
+          GOOGLE_APP_SCRIPT_URL !== "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE"
+        ) {
+          fetch(GOOGLE_APP_SCRIPT_URL)
+            .then((res) => res.json())
+            .then((liveStock) => {
+              products.forEach((p) => {
+                if (liveStock[p.id] !== undefined) {
+                  p.stock = liveStock[p.id];
+                }
+              });
+              renderProducts();
+            })
+            .catch((err) => console.log("Stock fetch error:", err));
+        }
+      }
+
+      // প্রোডাক্ট রেন্ডার করা
+      function renderProducts() {
+        const grid = document.getElementById("productGrid");
+        grid.innerHTML = products
+          .map((p) => {
+            const isStockOut = p.stock <= 0;
+            return `
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="${p.image}" class="product-img" alt="${p.name}">
+                    <span class="product-tag">${p.id}</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">${p.name}</h3>
+                    <div class="price-row">
+                        <div>
+                            <span class="current-price">৳ ${p.price}</span>
+                            <span class="old-price">৳ ${p.oldPrice}</span>
+                        </div>
+                        <div class="stock-badge ${isStockOut ? "out-stock" : "in-stock"}">
+                            ${isStockOut ? "• SOLDOUT" : "• IN STOCK (" + p.stock + ")"}
+                        </div>
+                    </div>
+                    <div class="action-grid">
+                        <button class="btn btn-cart" onclick="addToCart('${p.id}')" ${isStockOut ? "disabled" : ""}>
+                            <i class="fa-solid fa-cart-plus"></i> ADD TO CART
+                        </button>
+                        <button class="btn btn-buy" onclick="buyNow('${p.id}')" ${isStockOut ? "disabled" : ""}>
+                            <i class="fa-solid fa-bolt"></i> BUY NOW
+                        </button>
+                    </div>
+                </div>
+            </div>
+        `;
+          })
+          .join("");
+      }
+
+      // কার্ট লজিক
+      function addToCart(productId) {
+        const product = products.find((p) => p.id === productId);
+        if (!product || product.stock <= 0) return;
+
+        const existingItem = cart.find((item) => item.id === productId);
+        if (existingItem) {
+          if (existingItem.qty < product.stock) {
+            existingItem.qty++;
+          } else {
+            showStatusPopup(
+              "failed",
+              "স্টক সীমাবদ্ধতা",
+              "দুঃখিত! এই ক্যাপটির পর্যাপ্ত স্টক আর নেই।",
+            );
+            return;
+          }
+        } else {
+          cart.push({ ...product, qty: 1 });
+        }
+        updateCartUI();
+      }
+
+      function buyNow(productId) {
+        addToCart(productId);
+        openCheckoutModal();
+      }
+
+      function calculateSubtotal(totalQty) {
+        let comboSets = Math.floor(totalQty / 3);
+        let remainingQty = totalQty % 3;
+        return comboSets * 1350 + remainingQty * 490;
+      }
+
+      function updateCartUI() {
+        const totalQty = cart.reduce((sum, item) => sum + item.qty, 0);
+        let totalPrice = calculateSubtotal(totalQty);
+        document.getElementById("cartCount").innerText = totalQty;
+        document.getElementById("cartTotal").innerText = "৳ " + totalPrice;
+      }
+
+      function openCheckoutModal() {
+        if (cart.length === 0) {
+          showStatusPopup(
+            "failed",
+            "কার্ট খালি",
+            "অনুগ্রহ করে কালেকশন থেকে অন্তত একটি ক্যাপ যুক্ত করুন।",
+          );
+          return;
+        }
+        renderCartItems();
+        renderSummary();
+        document.getElementById("checkoutModal").classList.add("active");
+      }
+
+      function openCartModal() {
+        openCheckoutModal();
+      }
+
+      function closeModal() {
+        document.getElementById("checkoutModal").classList.remove("active");
+      }
+
+      function renderCartItems() {
+        const list = document.getElementById("cartItemsList");
+        list.innerHTML = cart
+          .map(
+            (item) => `
+        <div class="cart-item">
+            <img src="${item.image}" class="cart-item-img">
+            <div class="cart-item-details">
+                <div class="cart-item-title">${item.name}</div>
+                <div class="cart-item-price">৳ ${item.price}</div>
+            </div>
+            <div class="qty-controls">
+                <button class="qty-btn" onclick="changeQty('${item.id}', -1)">-</button>
+                <span style="font-size:9px; font-weight:600; padding:0 3px;">${item.qty}</span>
+                <button class="qty-btn" onclick="changeQty('${item.id}', 1)">+</button>
+            </div>
+        </div>
+    `,
+          )
+          .join("");
+      }
+
+      function changeQty(productId, delta) {
+        const item = cart.find((i) => i.id === productId);
+        const product = products.find((p) => p.id === productId);
+        if (!item) return;
+
+        item.qty += delta;
+        if (item.qty > product.stock) {
+          showStatusPopup(
+            "failed",
+            "স্টক সীমাবদ্ধতা",
+            "স্টকের চেয়ে বেশি পরিমাণ নির্বাচন করা সম্ভব নয়!",
+          );
+          item.qty = product.stock;
+        }
+        if (item.qty <= 0) {
+          cart = cart.filter((i) => i.id !== productId);
+        }
+
+        renderCartItems();
+        updateCartUI();
+        renderSummary();
+      }
+
+      function renderSummary() {
+        const totalQty = cart.reduce((sum, item) => sum + item.qty, 0);
+        let subtotal = calculateSubtotal(totalQty);
+        let delivery = parseInt(
+          document.getElementById("deliveryArea").value || 60,
+        );
+
+        if (totalQty >= 3) {
+          delivery = 0;
+        }
+
+        let grandTotal = subtotal + delivery;
+
+        document.getElementById("summaryQty").innerText = totalQty + " টি";
+        document.getElementById("summarySubtotal").innerText = "৳ " + subtotal;
+        document.getElementById("summaryDelivery").innerText =
+          delivery === 0 ? "FREE (Offer)" : "৳ " + delivery;
+        document.getElementById("summaryGrandTotal").innerText =
+          "৳ " + grandTotal;
+      }
+
+      function showStatusPopup(type, title, message) {
+        const iconBox = document.getElementById("statusIcon");
+        const titleBox = document.getElementById("statusTitle");
+        const descBox = document.getElementById("statusDesc");
+
+        if (type === "success") {
+          iconBox.className = "status-icon success";
+          iconBox.innerHTML = '<i class="fa-solid fa-check"></i>';
+        } else {
+          iconBox.className = "status-icon failed";
+          iconBox.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+        }
+
+        titleBox.innerText = title;
+        descBox.innerText = message;
+        document.getElementById("statusModal").classList.add("active");
+      }
+
+      function closeStatusModal() {
+        document.getElementById("statusModal").classList.remove("active");
+      }
+
+      // ফরম সাবমিট এবং ব্যাকএন্ড ভ্যালিডেশন
+      document
+        .getElementById("orderForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          if (cart.length === 0) {
+            showStatusPopup(
+              "failed",
+              "অর্ডার ব্যর্থ হয়েছে",
+              "আপনার কার্ট সম্পূর্ণ খালি!",
+            );
+            return;
+          }
+
+          const btn = document.getElementById("submitBtn");
+          btn.disabled = true;
+          btn.innerText = "অর্ডার প্রসেস হচ্ছে...";
+
+          const totalQty = cart.reduce((sum, item) => sum + item.qty, 0);
+          let subtotal = calculateSubtotal(totalQty);
+          let delivery =
+            totalQty >= 3
+              ? 0
+              : parseInt(document.getElementById("deliveryArea").value);
+          let grandTotal = subtotal + delivery;
+
+          // ফোন নম্বর ক্লিন ও ভ্যালিডেশন ফাংশন
+          function validateAndFormatPhone(inputPhone) {
+            // ১. বাংলা সংখ্যাগুলোকে ইংরেজি সংখ্যায় রূপান্তর
+            const banglaToEnglishMap = {
+              "০": "0",
+              "১": "1",
+              "২": "2",
+              "৩": "3",
+              "৪": "4",
+              "৫": "5",
+              "৬": "6",
+              "৭": "7",
+              "৮": "8",
+              "৯": "9",
+            };
+            let converted = inputPhone.replace(
+              /[০-৯]/g,
+              (match) => banglaToEnglishMap[match],
+            );
+
+            // ২. হাইফেন, স্পেস ও অন্যান্য চিহ্ন মুছে ফেলা (শুধু ডিজিট রাখা)
+            let cleanNumber = converted.replace(/\D/g, "");
+
+            // ৩. কান্ট্রি কোড (+88 বা 88) দিয়ে শুরু হলে তা বাদ দেওয়া
+            if (cleanNumber.startsWith("880")) {
+              cleanNumber = cleanNumber.substring(2);
+            } else if (
+              cleanNumber.startsWith("88") &&
+              cleanNumber.length > 11
+            ) {
+              cleanNumber = cleanNumber.substring(2);
+            }
+
+            // ৪. ১১ ডিজিট নিশ্চিত করা এবং 01 দিয়ে শুরু হওয়া যাচাই করা
+            const bdPhoneRegex = /^01[3-9]\d{8}$/;
+            if (bdPhoneRegex.test(cleanNumber)) {
+              return cleanNumber; // সঠিক ১১ ডিজিটের নম্বর রিটার্ন করবে
+            } else {
+              return null; // ভুল নম্বর হলে null রিটার্ন করবে
+            }
+          }
+
+          // ফরম সাবমিটের ভেতর ব্যবহারের উপায়:
+          const rawPhone = document.getElementById("custPhone").value;
+          const formattedPhone = validateAndFormatPhone(rawPhone);
+
+          if (!formattedPhone) {
+            showStatusPopup(
+              "failed",
+              "ভুল মোবাইল নম্বর",
+              "অনুগ্রহ করে একটি সঠিক ১১ ডিজিটের মোবাইল নম্বর প্রদান করুন (যেমন: 017XXXXXXXX)।",
+            );
+            return;
+          }
+
+          // এখন orderPayload-এ phone: formattedPhone পাঠাবেন
+
+          const orderPayload = {
+            orderDate: new Date().toLocaleString("en-US", {
+              timeZone: "Asia/Dhaka",
+            }),
+            customerName: document.getElementById("custName").value,
+            phone: document.getElementById("custPhone").value,
+            address: document.getElementById("custAddress").value,
+            items: cart.map((i) => `${i.name} (${i.id}) x ${i.qty}`).join(", "),
+            totalQuantity: totalQty,
+            totalAmount: grandTotal,
+            deliveryFee: delivery,
+            cartItems: cart.map((i) => ({
+              id: i.id,
+              name: i.name,
+              qty: i.qty,
+            })),
+          };
+
+          fetch(GOOGLE_APP_SCRIPT_URL, {
+            method: "POST",
+            body: JSON.stringify(orderPayload),
+          })
+            .then((res) => res.json())
+            .then((response) => {
+              if (response.result === "success") {
+                completeOrder(orderPayload);
+                fetchLiveStock();
+              } else {
+                showStatusPopup(
+                  "failed",
+                  "অর্ডার ব্যর্থ হয়েছে",
+                  response.message || "পর্যাপ্ত স্টক নেই!",
+                );
+                btn.disabled = false;
+                btn.innerText = "অর্ডার কনফার্ম করুন (ক্যাশ অন ডেলিভারি)";
+              }
+            })
+            .catch((err) => {
+              showStatusPopup(
+                "failed",
+                "ত্রুটি",
+                "নেটওয়ার্ক সমস্যা! আবার চেষ্টা করুন।",
+              );
+              btn.disabled = false;
+              btn.innerText = "অর্ডার কনফার্ম করুন (ক্যাশ অন ডেলিভারি)";
+            });
+        });
+
+      function completeOrder(orderDetails) {
+        closeModal();
+        showStatusPopup(
+          "success",
+          "অর্ডার সফল হয়েছে!",
+          `ধন্যবাদ ${orderDetails.customerName}! আপনার অর্ডারটি আমরা পেয়েছি। আমাদের টিম শীঘ্রই ডেলিভারির জন্য কল করবে। (সর্বমোট মূল্য: ৳ ${orderDetails.totalAmount})`,
+        );
+
+        cart = [];
+        updateCartUI();
+        document.getElementById("orderForm").reset();
+
+        const btn = document.getElementById("submitBtn");
+        btn.disabled = false;
+        btn.innerText = "অর্ডার কনফার্ম করুন (ক্যাশ অন ডেলিভারি)";
+      }
+
+      // অ্যাপ স্টার্ট
+      renderProducts();
+      updateCartUI();
+      fetchLiveStock();
+    </script>
+  </body>
+</html>
